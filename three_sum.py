@@ -8,9 +8,9 @@ class Solution:
             l , r = i + 1, len(nums) -1
             while l < r:
                 threeSum = a + nums[l] + nums[r]
-                if threeSum > target:
+                if threeSum > 0:
                     r -= 1
-                elif threeSum < target:
+                elif threeSum < 0:
                     l += 1
                 else:
                     result.append([a, nums[l], nums[r]]) 
