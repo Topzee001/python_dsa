@@ -3,7 +3,7 @@ class Node:
         self.data = data
         self.next = None
 
-def insertNewNodeAtTheFront(head, data):
+def insertAtFront(head, data):
     new_node = Node(data)
     new_node.next = head
     head = new_node
@@ -22,12 +22,13 @@ head = None
 print("Empty List:")
 print_list(head)
 
-head = insertNewNodeAtTheFront(head, 30)
+head = insertAtFront(head, 30)
 print("after inserting 30:")
 print_list(head)
 
 
-head = insertNewNodeAtTheFront(head, 40)
+head = insertAtFront(head, 40)
 print("after inserting 40:")
 print_list(head)
 
+# 
